@@ -3,7 +3,7 @@
 // ============================================================
 use marche_gabon
 
-// ── 1. Chiffre d'affaires par catégorie ─────────────────────
+// ── 1. Chiffre d'affaires par catégorie
 print("=== CA par catégorie ===")
 db.commandes.aggregate([
   { $match: { statut: "livré" } },
@@ -22,7 +22,7 @@ db.commandes.aggregate([
   }}
 ]).forEach(r => print(r.categorie, ":", r.chiffre_affaires, "FCFA —", r.nb_ventes, "ventes"))
 
-// ── 2. CA par mois ──────────────────────────────────────────
+// ── 2. CA par mois 
 print("\n=== CA par mois ===")
 db.commandes.aggregate([
   { $match: { statut: "livré" } },
@@ -37,7 +37,7 @@ db.commandes.aggregate([
   }}
 ]).forEach(r => print("Mois", r.mois, ":", r.total_mois, "FCFA —", r.nb_commandes, "commandes"))
 
-// ── 3. Top 5 produits par note moyenne (min 3 avis) ─────────
+// ── 3. Top 5 produits par note moyenne (min 3 avis) 
 print("\n=== Top 5 produits (note >= 3 avis) ===")
 db.avis.aggregate([
   { $group: {
@@ -69,7 +69,7 @@ db.produits.find({
 ).sort({ prix: 1 })
 .forEach(p => print(" →", p.nom, ":", p.prix, "FCFA"))
 
-// ── 5. $match + $group + $sort + $lookup ────────────────────
+// ── 5. $match + $group + $sort + $lookup 
 print("\n=== Ventes par ville de livraison ===")
 db.commandes.aggregate([
   { $match: { statut: "livré" } },
