@@ -1,7 +1,7 @@
 // ============================================================
 // COLLECTION : utilisateurs (35 documents)
 // ============================================================
-use marche_gabon
+ marché_gabon
 
 db.utilisateurs.insertMany([
   // ── Vendeurs
