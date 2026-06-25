@@ -11,4 +11,4 @@ db.produits.drop()
 db.commandes.drop()
 db.avis.drop()
 
-print("✅ Base de données 'marche_gabon' prête.")
+print(" Base de données 'marche_gabon' prête.")
