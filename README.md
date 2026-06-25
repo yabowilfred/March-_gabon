@@ -3,7 +3,7 @@
 Plateforme e-commerce pour commerçants de Libreville, Port-Gentil, Franceville et Owendo.
 
 ##  Prérequis
-- MongoDB 7.0+
+- MongoDB 
 - MongoDB Compass (interface graphique)
 - mongosh (shell MongoDB)
 
