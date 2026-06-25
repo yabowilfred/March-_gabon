@@ -14,6 +14,7 @@ Plateforme e-commerce pour commerçants de Libreville, Port-Gentil, Franceville 
 net start MongoDB
 
 ### 2. Ouvrir mongosh et exécuter les scripts dans l'ordre
+
 mongosh < 01_setup.js
 mongosh < 02_utilisateurs.js
 mongosh < 03_produits.js
@@ -25,14 +26,15 @@ mongosh < 07_index_performance.js
 ##  Structure du projet
 
 marche_gabon/
- -01_setup.js              → Initialisation de la base
- -02_utilisateurs.js       → 15 utilisateurs (vendeurs + acheteurs)
- -03_produits.js           → 30 produits (4 catégories)
- -04_commandes_avis.js     → 15 commandes + 22 avis
- -05_crud.js               → Opérations CRUD complètes
- -06_agregation.js         → Pipelines d'agrégation
- -07_index_performance.js  → Index + explain()
- -README.md
+
+├── 01_setup.js              → Initialisation de la base
+├── 02_utilisateurs.js       → 15 utilisateurs (vendeurs + acheteurs)
+├── 03_produits.js           → 30 produits (4 catégories)
+├── 04_commandes_avis.js     → 15 commandes + 22 avis
+├── 05_crud.js               → Opérations CRUD complètes
+├── 06_agregation.js         → Pipelines d'agrégation
+├── 07_index_performance.js  → Index + explain()
+└── README.md
 
 ##  Collections
 
