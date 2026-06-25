@@ -3,7 +3,7 @@
 // ============================================================
 use marche_gabon
 
-// ── COMMANDES ────────────────────────────────────────────────
+// ── COMMANDES 
 db.commandes.insertMany([
   {
     reference: "CMD-2024-001",
@@ -154,9 +154,9 @@ db.commandes.insertMany([
   }
 ])
 
-print("✅ " + db.commandes.countDocuments() + " commandes insérées.")
+print(" " + db.commandes.countDocuments() + " commandes insérées.")
 
-// ── AVIS ─────────────────────────────────────────────────────
+// ── AVIS 
 db.avis.insertMany([
   // Samsung Galaxy A54
   { produit: "Samsung Galaxy A54", categorie: "informatique", acheteur: "Nzamba Koumba Fabiola", note: 5, commentaire: "Excellent téléphone, livraison rapide à Libreville !", date: new Date("2024-02-13") },
@@ -196,4 +196,4 @@ db.avis.insertMany([
   { produit: "iPhone 13 128Go", categorie: "informatique", acheteur: "Nzamba Koumba Fabiola", note: 5, commentaire: "Excellent, je recommande ce vendeur !", date: new Date("2024-03-28") }
 ])
 
-print("✅ " + db.avis.countDocuments() + " avis insérés.")
+print(" " + db.avis.countDocuments() + " avis insérés.")
