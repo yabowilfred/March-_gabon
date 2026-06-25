@@ -5,7 +5,7 @@ use marche_gabon
 
 print("========== CRUD ==========")
 
-// ── CREATE ───────────────────────────────────────────────────
+// ── CREATE 
 print("\n--- INSERT ---")
 db.produits.insertOne({
   nom: "Mixeur Blender 1.5L", categorie: "electronique",
@@ -14,9 +14,9 @@ db.produits.insertOne({
   date_ajout: new Date(),
   attributs: { capacite: "1.5L", puissance: "600W", marque: "Binatone", garantie: "1 an" }
 })
-print("✅ Produit inséré")
+print(" Produit inséré")
 
-// ── READ ─────────────────────────────────────────────────────
+// ── READ 
 print("\n--- FIND avec filtres ---")
 
 // Tous les produits disponibles
@@ -42,22 +42,22 @@ db.produits.find({}, { nom: 1, prix: 1, _id: 0 })
   .sort({ prix: -1 }).limit(3)
   .forEach(p => print("  →", p.nom, ":", p.prix, "FCFA"))
 
-// ── UPDATE ───────────────────────────────────────────────────
+// ── UPDATE 
 print("\n--- UPDATE ---")
 db.produits.updateOne(
   { nom: "Clé USB Kingston 64Go" },
   { $set: { prix: 9000 }, $inc: { stock: -5 } }
 )
-print("✅ Prix et stock mis à jour")
+print(" Prix et stock mis à jour")
 
 db.produits.updateMany(
   { categorie: "alimentation", disponible: true },
   { $set: { "attributs.promotion": false } }
 )
-print("✅ Champ promotion ajouté à tous les produits alimentaires")
+print(" Champ promotion ajouté à tous les produits alimentaires")
 
-// ── DELETE ───────────────────────────────────────────────────
+// ── DELETE 
 print("\n--- DELETE ---")
 db.commandes.deleteMany({ statut: "annulé" })
-print("✅ Commandes annulées supprimées")
+print(" Commandes annulées supprimées")
 print("Commandes restantes : " + db.commandes.countDocuments())
