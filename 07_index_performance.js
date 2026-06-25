@@ -1,7 +1,7 @@
 // ============================================================
 // INDEX ET PERFORMANCE
 // ============================================================
-use marche_gabon
+ marché_gabon
 
 // ── Créer les index 
 print("=== Création des index ===")
