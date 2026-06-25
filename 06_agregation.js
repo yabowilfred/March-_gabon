@@ -1,7 +1,7 @@
 // ============================================================
 // PIPELINES D'AGRÉGATION
 // ============================================================
-use marche_gabon
+ marche_gabon
 
 // ── 1. Chiffre d'affaires par catégorie
 print("=== CA par catégorie ===")
