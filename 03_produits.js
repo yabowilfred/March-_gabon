@@ -3,7 +3,7 @@
 // ============================================================
 use marche_gabon
 
-// ── CATÉGORIE 1 : Informatique ───────────────────────────────
+// ── CATÉGORIE 1 : Informatique 
 db.produits.insertMany([
   {
     nom: "Samsung Galaxy A54", categorie: "informatique",
@@ -62,7 +62,7 @@ db.produits.insertMany([
     attributs: { connexion: "Bluetooth 5.0", autonomie: "40h", couleur: "Noir", micro: true }
   },
 
-  // ── CATÉGORIE 2 : Mode ──────────────────────────────────────
+  // ── CATÉGORIE 2 : Mode
   {
     nom: "Robe Wax Pagne Gabonais", categorie: "mode",
     prix: 25000, devise: "FCFA", disponible: true, stock: 15,
@@ -106,7 +106,7 @@ db.produits.insertMany([
     attributs: { taille: "L", couleur: "Blanc", matiere: "Lin", manche: "Longue" }
   },
 
-  // ── CATÉGORIE 3 : Alimentation ──────────────────────────────
+  // ── CATÉGORIE 3 : Alimentation 
   {
     nom: "Sac de Riz Parfumé 25kg", categorie: "alimentation",
     prix: 22000, devise: "FCFA", disponible: true, stock: 50,
@@ -164,7 +164,7 @@ db.produits.insertMany([
     attributs: { poids_unite: "400g", quantite: "24 boites", marque: "Mutti", date_expiration: "2026-06-01" }
   },
 
-  // ── CATÉGORIE 4 : Électronique ──────────────────────────────
+  // ── CATÉGORIE 4 : Électronique 
   {
     nom: "Climatiseur Hisense 1.5CV Split", categorie: "electronique",
     prix: 320000, devise: "FCFA", disponible: true, stock: 4,
@@ -216,4 +216,4 @@ db.produits.insertMany([
   }
 ])
 
-print("✅ " + db.produits.countDocuments() + " produits insérés.")
+print(" " + db.produits.countDocuments() + " produits insérés.")
