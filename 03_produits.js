@@ -1,7 +1,7 @@
 // ============================================================
 // COLLECTION : produits — 4 catégories (schéma flexible)
 // ============================================================
-use marche_gabon
+ marché_gabon
 
 // ── CATÉGORIE 1 : Informatique 
 db.produits.insertMany([
