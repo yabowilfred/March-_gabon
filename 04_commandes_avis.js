@@ -1,7 +1,7 @@
 // ============================================================
 // COLLECTIONS : commandes & avis
 // ============================================================
-use marche_gabon
+ marché_gabon
 
 // ── COMMANDES 
 db.commandes.insertMany([
