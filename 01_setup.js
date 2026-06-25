@@ -2,10 +2,10 @@
 // MARCHÉ EN LIGNE DU GABON — Setup & Données
 // ============================================================
 
-// ── 1. Sélectionner la base de données ──────────────────────
-use marche_gabon
+// ── 1. Sélectionner la base de données 
+ marche_gabon
 
-// ── 2. Supprimer les collections si elles existent déjà ─────
+// ── 2. Supprimer les collections si elles existent déjà 
 db.utilisateurs.drop()
 db.produits.drop()
 db.commandes.drop()
