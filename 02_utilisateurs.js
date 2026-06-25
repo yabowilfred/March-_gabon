@@ -4,7 +4,7 @@
 use marche_gabon
 
 db.utilisateurs.insertMany([
-  // ── Vendeurs ─────────────────────────────────────────────
+  // ── Vendeurs
   {
     nom: "Ondo Mba", prenom: "Patrick", email: "patrick.ondo@gmail.com",
     telephone: "+24174123456", ville: "Libreville", quartier: "Akanda",
@@ -35,7 +35,7 @@ db.utilisateurs.insertMany([
     role: "vendeur", boutique: "MultiShop Owendo", note_vendeur: 4.6,
     date_inscription: new Date("2023-05-12"), actif: true
   },
-  // ── Acheteurs ────────────────────────────────────────────
+  // ── Acheteurs 
   {
     nom: "Nzamba Koumba", prenom: "Fabiola", email: "fabiola.nzamba@gmail.com",
     telephone: "+24174678901", ville: "Libreville", quartier: "Louis",
@@ -88,4 +88,4 @@ db.utilisateurs.insertMany([
   }
 ])
 
-print("✅ " + db.utilisateurs.countDocuments() + " utilisateurs insérés.")
+print(" " + db.utilisateurs.countDocuments() + " utilisateurs insérés.")
